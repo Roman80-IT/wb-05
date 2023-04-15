@@ -8,9 +8,16 @@
 } 
 */
 
+:root {
+  /* text & background #2e2f42 black white */
+  --text-color: white;
+  --bg-color: #2e2f42;
+}
+
 body {
-  font-family: sans-serif;
-  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 .container {
@@ -20,6 +27,7 @@ body {
   padding: 30px 15px;
   outline: 2px solid red;
   outline-offset: -2px;
+  letter-spacing: 0.05em;
 }
 
 img {
@@ -54,6 +62,11 @@ img {
   line-height: 1.5;
   border: 2px dashed #212121;
   padding: 20px;
+}
+
+.small-text {
+  background-color: #fff;
+  padding: 14px;
 }
 
 /* Властивість "margin" */
