@@ -1,93 +1,155 @@
 <!DOCTYPE html>
-<html lang="uk-UA">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Block Model</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- LESSON 5 - Block Model-->
-      <h1>
-        <a
-          href="https://www.edu.goit.global/uk/learn/10442131/8851858/8851883/textbook"
-          >goit</a
-        >
-        LESSON 5 - Block Model
-      </h1>
+    <section>
+      <div class="container">
+        <!-- LESSON 5 - Block Model-->
+        <h1>
+          <a
+            href="https://www.edu.goit.global/uk/learn/10442131/8851858/8851883/textbook"
+            >goit</a
+          >
+          LESSON 5 - Block Model
+        </h1>
 
-      <!-- Codepen -->
-      <a href="https://codepen.io/Roman80-IT/pen/ZEqWJvp">codepen</a>
-      <p
-        class="codepen"
-        data-height="300"
-        data-default-tab="html,result"
-        data-slug-hash="ZEqWJvp"
-        data-user="Roman80-IT"
-        style="
-          height: 300px;
-          box-sizing: border-box;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 2px solid;
-          margin: 1em 0;
-          padding: 1em;
-        "
-      >
-        <span
-          >See the Pen
-          <a href="https://codepen.io/Roman80-IT/pen/ZEqWJvp"> Untitled</a> by
-          Roman80-IT (<a href="https://codepen.io/Roman80-IT">@Roman80-IT</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span
-        >
-      </p>
-      <script
-        async
-        src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-      ></script>
-
-      <h2>Box Model <br />(Блокова модель)</h2>
-
-      <img
-        src="./images/box-model/box-model.png"
-        alt="visual model of the box model"
-        width="80%"
-      />
-      <h3>Геометрія елемента</h3>
-      <h4>Властивість "padding"</h4>
-
-      <p class="text">
-        Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis
-        voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis
-        laborum odio voluptatem repellat eaque voluptatum quos neque optio,
-        perspiciatis aperiam error odit praesentium consequatur totam maiores.
-        Minus similique molestias, eveniet delectus eaque dignissimos! Id
-        deserunt magni doloremque, corrupti consectetur vero!
-      </p>
-
-      <h4>Властивість "padding"</h4>
-
-      <article class="post">
-        <div class="post-thumb">
+        <h2>Box Model <br />(Блокова модель)</h2>
+        <div class="top-upper">
           <img
-            class="post-image"
-            src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
-            alt="Tabby cat in a funny sitting position"
+            src="./images/box-model/box-model.png"
+            alt="visual model of the box model"
+            width="80%"
           />
         </div>
-        <h1 class="post-heading">All about cats</h1>
-        <p class="post-text">
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <!-- Codepen-1 -->
+        <a href="https://codepen.io/Roman80-IT/pen/ZEqWJvp">codepen</a>
+        <p
+          class="codepen"
+          data-height="300"
+          data-default-tab="html,result"
+          data-slug-hash="ZEqWJvp"
+          data-user="Roman80-IT"
+          style="
+            height: 300px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid;
+            margin: 1em 0;
+            padding: 1em;
+          "
+        >
+          <span
+            >See the Pen
+            <a href="https://codepen.io/Roman80-IT/pen/ZEqWJvp"> Untitled</a> by
+            Roman80-IT (<a href="https://codepen.io/Roman80-IT">@Roman80-IT</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span
+          >
+        </p>
+        <script
+          async
+          src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+        ></script>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h3>
+          'width' and 'height' properties <br />Властивості 'width' i 'height'
+        </h3>
+        <p class="">
+          These properties make it possible to explicitly set the total width
+          and height of an element, or just the size of its content; it all
+          depends on the type of a box model.
+        </p>
+        <p class="">A few tips for work with these properties.</p>
+        <ul>
+          <li class="delta">
+            Do not set elements a fixed height, let it be determined by the
+            content. A fixed height creates overflow problems when there is more
+            content than the element can contain.
+          </li>
+          <li class="delta">
+            Most of the elements should be set only with width. width and height
+            at the same time should only be used for decorative elements with a
+            fixed size such as icons.
+          </li>
+          <li class="delta">
+            Width can be set not only in px, em or rem, but also in percentages.
+            In this case, the box width will be calculated as a percentage of
+            the parent's width. You will learn more when studying grids.
+          </li>
+        </ul>
+
+        <p>
+          Ці властивості дозволяють явно вказати загальну ширину і висоту
+          елемента, або тільки розмір його області вмісту (контенту), все
+          залежить від типу блокової моделі.
+        </p>
+        <p>Кілька порад для використання цих властивостей.</p>
+        <ul>
+          <li class="delta">
+            Не ставте елементам фіксовану висоту, нехай вона визначається
+            контентом. Точно встановлена висота призводить до проблеми
+            переповнення, коли контенту більше, ніж елемент може вмістити.
+          </li>
+          <li class="delta">
+            Більшості елементів задається тільки ширина. Вказувати одночасно
+            width і height варто тільки декоративним елементам з фіксованим
+            розміром, наприклад іконкам.
+          </li>
+          <li class="delta">
+            Ширину можна задавати не тільки в px, em або rem, але й у відсотках.
+            У такому разі ширина блоку буде розрахована як відсоток від ширини
+            батька. Детальніше про це при побудові сіток.
+          </li>
+        </ul>
+        <h3>Геометрія елемента</h3>
+        <h4>Властивість "padding"</h4>
+
+        <p class="text">
           Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis
           voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis
           laborum odio voluptatem repellat eaque voluptatum quos neque optio,
           perspiciatis aperiam error odit praesentium consequatur totam maiores.
           Minus similique molestias, eveniet delectus eaque dignissimos! Id
-          deserunt magni doloremque, corrupti consectetur vero veniam!
+          deserunt magni doloremque, corrupti consectetur vero!
         </p>
-      </article>
-    </div>
+
+        <h4>Властивість "padding"</h4>
+
+        <article class="post">
+          <div class="post-thumb">
+            <img
+              class="post-image"
+              src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+              alt="Tabby cat in a funny sitting position"
+            />
+          </div>
+          <h1 class="post-heading">All about cats</h1>
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing.
+            Omnis voluptatibus sit reprehenderit iure est eveniet saepe fugit
+            debitis laborum odio voluptatem repellat eaque voluptatum quos neque
+            optio, perspiciatis aperiam error odit praesentium consequatur totam
+            maiores. Minus similique molestias, eveniet delectus eaque
+            dignissimos! Id deserunt magni doloremque, corrupti consectetur vero
+            veniam!
+          </p>
+        </article>
+      </div>
+    </section>
   </body>
 </html>

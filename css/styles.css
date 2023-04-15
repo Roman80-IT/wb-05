@@ -10,7 +10,6 @@
 
 body {
   font-family: sans-serif;
-  line-height: 1.5;
   color: #212121;
 }
 
@@ -18,11 +17,28 @@ body {
   width: 100%;
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0px 15px;
-  /*  контур елемента 
+  padding: 30px 15px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+img {
+  display: block;
+}
+
+.delta {
+  margin-bottom: 6px;
+}
+
+.top-upper {
+  margin-top: 30px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/*  контур елемента 
   outline: 2px solid red;
   outline-offset: -2px; */
-}
 
 /**
   |============================
@@ -34,9 +50,10 @@ body {
 /* Властивість "padding" */
 
 .text {
-  padding: 20px;
   background-color: #fff;
+  line-height: 1.5;
   border: 2px dashed #212121;
+  padding: 20px;
 }
 
 /* Властивість "margin" */
