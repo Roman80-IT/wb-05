@@ -1,0 +1,42 @@
+/* Глобальний "border-box"
+Використовуючи універсальний селектор *, значення border-box встановлюється для всіх елементів і псевдоелементів:
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+*/
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #212121;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  /*  контур елемента 
+  outline: 2px solid red;
+  outline-offset: -2px; */
+}
+
+/**
+  |============================
+  | LESSON 5 - Block Model
+  |============================
+*/
+
+/* === Геометрія елемента === */
+/* Властивість "padding" */
+
+.text {
+  padding: 20px;
+  background-color: #fff;
+  border: 2px dashed #212121;
+}
+
+/* Властивість "margin" */
