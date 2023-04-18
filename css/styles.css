@@ -21,7 +21,7 @@ body {
   background-color: var(--bg-color);
 }
 
-.container {
+section {
   width: 100%;
   max-width: 1158px;
   margin: 0 auto;
@@ -30,6 +30,16 @@ body {
   outline-offset: -2px;
   letter-spacing: 0.05em;
 }
+
+/* .container {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+  letter-spacing: 0.05em;
+} */
 
 img {
   display: block;
