@@ -17,19 +17,20 @@
   <body>
     <section>
       <div class="container">
-        <!-- LESSON 5 - Block Model-->
+        <!-- ======= LESSON 5 - Block Model ======= -->
         <h1>
           <a
+            class="link"
             href="https://www.edu.goit.global/uk/learn/10442131/8851858/8851883/textbook"
             >goit</a
           >
           LESSON 5 - Block Model
         </h1>
-        <h2>LESSON 5 - Block Model</h2>
+        <!-- <h2>LESSON 5 - Block Model</h2>
         <h3>LESSON 5 - Block Model</h3>
         <h4>LESSON 5 - Block Model</h4>
         <h5>LESSON 5 - Block Model</h5>
-        <h6>LESSON 5 - Block Model</h6>
+        <h6>LESSON 5 - Block Model</h6> -->
 
         <h2>Box Model <br />(Блокова модель)</h2>
         <div class="top-upper">
@@ -44,8 +45,10 @@
 
     <section>
       <div class="container">
-        <!-- Codepen-1 -->
-        <a href="https://codepen.io/Roman80-IT/pen/ZEqWJvp">codepen</a>
+        <!-- ==== CODEPEN-1 ==== -->
+        <a class="link" href="https://codepen.io/Roman80-IT/pen/ZEqWJvp"
+          >Codepen</a
+        >
         <p
           class="codepen"
           data-height="300"
@@ -81,7 +84,9 @@
         <h3>
           'width' and 'height' properties <br />Властивості 'width' i 'height'
         </h3>
-        <p class="">
+        <!-- Детальне пояснення 
+          <small>
+          <p class="">
           These properties make it possible to explicitly set the total width
           and height of an element, or just the size of its content; it all
           depends on the type of a box model.
@@ -103,33 +108,30 @@
             In this case, the box width will be calculated as a percentage of
             the parent's width. You will learn more when studying grids.
           </li>
+        </ul> </small>-->
+
+        <p>
+          Ці властивості явно вказують загальну ширину і висоту елемента, або
+          тільки розмір його області вмісту (контенту) — залежить від типу
+          блокової моделі.
+        </p>
+        <p>Поради:</p>
+        <ul>
+          <li class="delta">
+            Не ставте елементам фіксовану висоту (може призвести до
+            переповнення) — краще, щоб визначалася контентом.
+          </li>
+          <li class="delta">
+            Вказувати одночасно 'width' і 'height' варто тільки декоративним
+            елементам з фіксованим розміром, наприклад іконкам.
+          </li>
+          <li class="delta">
+            Можна задавати не тільки в 'px', 'em' або 'rem', але й у '%' —
+            ширина блоку буде розрахована як відсоток від ширини батька
+            (детальніше при побудові сіток).
+          </li>
         </ul>
 
-        <small
-          ><p>
-            Ці властивості дозволяють явно вказати загальну ширину і висоту
-            елемента, або тільки розмір його області вмісту (контенту), все
-            залежить від типу блокової моделі.
-          </p>
-          <p>Кілька порад для використання цих властивостей.</p>
-          <ul>
-            <li class="delta">
-              Не ставте елементам фіксовану висоту, нехай вона визначається
-              контентом. Точно встановлена висота призводить до проблеми
-              переповнення, коли контенту більше, ніж елемент може вмістити.
-            </li>
-            <li class="delta">
-              Більшості елементів задається тільки ширина. Вказувати одночасно
-              width і height варто тільки декоративним елементам з фіксованим
-              розміром, наприклад іконкам.
-            </li>
-            <li class="delta">
-              Ширину можна задавати не тільки в px, em або rem, але й у
-              відсотках. У такому разі ширина блоку буде розрахована як відсоток
-              від ширини батька. Детальніше про це при побудові сіток.
-            </li>
-          </ul></small
-        >
         <h3>Геометрія елемента</h3>
         <h4>Властивість "padding"</h4>
 

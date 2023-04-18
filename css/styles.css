@@ -12,6 +12,7 @@
   /* text & background #2e2f42 black white */
   --text-color: white;
   --bg-color: #2e2f42;
+  --link-color: #7bb0ff;
 }
 
 body {
@@ -43,6 +44,10 @@ img {
   margin-top: 30px;
   outline: 2px solid red;
   outline-offset: -2px;
+}
+
+.link {
+  color: var(--link-color);
 }
 
 /*  контур елемента 
