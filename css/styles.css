@@ -351,7 +351,7 @@ section {
 }
 
 .container {
-  /* width: 100%; */
+  max-width: 100%;
   margin: 0 auto;
   padding: 10px 10px;
   outline: 2px solid red;
@@ -361,9 +361,9 @@ section {
 
 img {
   display: block;
-  max-width: 100%;
 }
 
+/* відступи для li-шок */
 .delta {
   margin-bottom: 6px;
 }
@@ -374,10 +374,6 @@ img {
   outline-offset: -2px;
 }
 
-/* .link {
-  color: var(--link-color);
-} */
-
 code {
   background-color: var(--ifm-code-background);
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -387,6 +383,28 @@ code {
   font-size: var(--ifm-code-font-size);
   padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
 }
+
+/**
+  |============================
+  | GOIT
+  |============================
+*/
+
+.link {
+  color: var(--link-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.en {
+  color: var(--link-color);
+}
+
+/**
+  |============================
+  | Codepen
+  |============================
+*/
 
 .codepen {
   display: inline-block;
@@ -411,6 +429,10 @@ code {
   | LESSON 5 - Block Model
   |============================
 */
+
+.img-1 {
+  max-width: 70%;
+}
 
 /* === Геометрія елемента === */
 /* Властивість "padding" */
