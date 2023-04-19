@@ -379,7 +379,7 @@ img {
 
 /* відступи для li-шок */
 .delta {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .top-upper {
@@ -497,6 +497,7 @@ code {
 
 .img-1 {
   max-width: 70%;
+  margin: 20px;
 }
 
 /* === Геометрія елемента === */
