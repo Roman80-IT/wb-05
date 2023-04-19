@@ -108,6 +108,7 @@
   --ifm-font-color-base: var(--ifm-color-content);
   --ifm-font-color-base-inverse: var(--ifm-color-content-inverse);
   --ifm-font-color-secondary: var(--ifm-color-content-secondary);
+  /* Font */
   --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
     Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -135,10 +136,10 @@
   --ifm-z-index-overlay: 400;
   --ifm-container-width: 1140px;
   --ifm-container-width-xl: 1320px;
-  --ifm-code-background: #f6f7f8;
+  /* --ifm-code-background: #f6f7f8; */
   --ifm-code-border-radius: var(--ifm-global-radius);
   --ifm-code-font-size: 90%;
-  --ifm-code-padding-horizontal: 0.1rem;
+  --ifm-code-padding-horizontal: 0.2rem;
   --ifm-code-padding-vertical: 0.1rem;
   --ifm-pre-background: var(--ifm-code-background);
   --ifm-pre-border-radius: var(--ifm-code-border-radius);
@@ -320,10 +321,11 @@
   --docusaurus-collapse-button-bg-hover: rgba(0, 0, 0, 0.1);
   --doc-sidebar-width: 300px;
   --doc-sidebar-hidden-width: 30px;
+  /* style */
   --text-color: white;
   --bg-color: #2e2f42;
   --link-color: #7bb0ff;
-  --ifm-code-background: #f6f7f8;
+  --ifm-code-background: #6e6e6e;
 }
 
 /**
@@ -348,15 +350,14 @@ section {
   letter-spacing: 0.05em;
 }
 
-/* .container {
-  width: 100%;
-  max-width: 1158px;
+.container {
+  /* width: 100%; */
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 10px 10px;
   outline: 2px solid red;
   outline-offset: -2px;
   letter-spacing: 0.05em;
-} */
+}
 
 img {
   display: block;
@@ -373,17 +374,32 @@ img {
   outline-offset: -2px;
 }
 
-.link {
+/* .link {
   color: var(--link-color);
-}
+} */
 
 code {
   background-color: var(--ifm-code-background);
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: var(--ifm-code-border-radius);
-  font-family: var(--ifm-font-family-monospace);
+  /* font-family: var(--ifm-font-family-monospace); */
+  font-family: inherit;
   font-size: var(--ifm-code-font-size);
   padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+}
+
+.codepen {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--link-color);
+  /* text-decoration: none; */
+  /* align-items: center; */
+  margin-bottom: 6px;
 }
 
 /*  контур елемента 
@@ -404,11 +420,6 @@ code {
   line-height: 1.5;
   border: 2px dashed #212121;
   padding: 20px;
-}
-
-.small-text {
-  background-color: #fff;
-  padding: 14px;
 }
 
 /* Властивість "margin" */
