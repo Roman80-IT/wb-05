@@ -9,6 +9,7 @@
 */
 
 :root {
+  /*  
   --ifm-color-scheme: light;
   --ifm-dark-value: 10%;
   --ifm-darker-value: 15%;
@@ -108,7 +109,6 @@
   --ifm-font-color-base: var(--ifm-color-content);
   --ifm-font-color-base-inverse: var(--ifm-color-content-inverse);
   --ifm-font-color-secondary: var(--ifm-color-content-secondary);
-  /* Font */
   --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
     Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -136,7 +136,7 @@
   --ifm-z-index-overlay: 400;
   --ifm-container-width: 1140px;
   --ifm-container-width-xl: 1320px;
-  /* --ifm-code-background: #f6f7f8; */
+  --ifm-code-background: #f6f7f8;
   --ifm-code-border-radius: var(--ifm-global-radius);
   --ifm-code-font-size: 90%;
   --ifm-code-padding-horizontal: 0.2rem;
@@ -194,7 +194,7 @@
   --ifm-scrollbar-thumb-background-color: silver;
   --ifm-scrollbar-thumb-hover-background-color: #a7a7a7;
   --ifm-alert-background-color: inherit;
-  --ifm-alert-border-color: inherit;
+  --ifm-alert-border-color: inherit; 
   --ifm-alert-border-radius: var(--ifm-global-radius);
   --ifm-alert-border-width: 0px;
   --ifm-alert-border-left-width: 5px;
@@ -320,12 +320,24 @@
   --docusaurus-collapse-button-bg: transparent;
   --docusaurus-collapse-button-bg-hover: rgba(0, 0, 0, 0.1);
   --doc-sidebar-width: 300px;
-  --doc-sidebar-hidden-width: 30px;
+  --doc-sidebar-hidden-width: 30px; */
+
   /* style */
   --text-color: white;
   --bg-color: #2e2f42;
   --link-color: #7bb0ff;
+  --ifm-code-font-size: 90%;
   --ifm-code-background: #6e6e6e;
+  --ifm-alert-background: #474747;
+  --ifm-global-radius: 0.4rem;
+  --ifm-code-border-radius: var(--ifm-global-radius);
+  --ifm-pre-padding: 1rem;
+  --prism-background-color: #282a36;
+  --ifm-code-padding-horizontal: 0.2rem;
+  --ifm-code-padding-vertical: 0.1rem;
+  --ifm-alert-border-width: 0px;
+  --ifm-alert-border-left-width: 5px;
+  --ifm-alert-border-radius: var(--ifm-global-radius);
 }
 
 /**
@@ -344,7 +356,7 @@ section {
   width: 100%;
   max-width: 1158px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 20px 20px;
   outline: 2px solid red;
   outline-offset: -2px;
   letter-spacing: 0.05em;
@@ -353,6 +365,8 @@ section {
 .container {
   max-width: 100%;
   margin: 0 auto;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
   padding: 10px 10px;
   outline: 2px solid red;
   outline-offset: -2px;
@@ -382,6 +396,7 @@ code {
   font-family: inherit;
   font-size: var(--ifm-code-font-size);
   padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+  margin: 3px;
 }
 
 /**
@@ -419,6 +434,56 @@ code {
   /* align-items: center; */
   margin-bottom: 6px;
 }
+
+/**
+  |============================
+  | УВАГА !
+  |============================
+*/
+
+.alert {
+  max-width: 100%;
+  /* --ifm-link-color: var(--ifm-alert-foreground-color);
+  --ifm-link-hover-color: var(--ifm-alert-foreground-color);
+  --ifm-link-decoration: underline;
+  --ifm-tabs-color: var(--ifm-alert-foreground-color);
+  --ifm-tabs-color-active: var(--ifm-alert-foreground-color);
+  --ifm-tabs-color-active-border: var(--ifm-alert-border-color); */
+  background-color: var(--ifm-alert-background);
+  border: var(--ifm-alert-border-width) solid var(--ifm-color-secondary-dark);
+  border-left-width: var(--ifm-alert-border-left-width);
+  border-radius: var(--ifm-alert-border-radius);
+  /* box-shadow: var(--ifm-alert-shadow); */
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+/**
+  |============================
+  | Блок Коду
+  |============================
+*/
+
+.codeBlock {
+  max-width: 100%;
+  background-color: var(--ifm-alert-background);
+  /* var(--prism-background-color */
+  padding: 20px;
+}
+
+.codeBlockLines {
+  /* float: left; */
+  background-color: var(--ifm-alert-background);
+  font: inherit;
+  min-width: 100%;
+  /* padding: var(--ifm-pre-padding); */
+}
+
+/* .svg-alert {
+  color: white;
+  fill: white;
+  width: 22px;
+} */
 
 /*  контур елемента 
   outline: 2px solid red;

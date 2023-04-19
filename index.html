@@ -39,15 +39,20 @@
           <h6>LESSON 5 - Block Model</h6> -->
 
         <h2>Box Model <br />(Блокова модель)</h2>
-        <!-- <div class="top-upper img-1"> -->
         <img
           class="top-upper img-1"
           src="./images/box-model/box-model.png"
           alt="visual model of the box model"
           width="2500"
         />
-        <!-- </div> -->
 
+        <ul>
+          <li class="delta"><strong>Область вмісту (content)</strong> — контент елемента (текст, зображення, відео або вкладені елементи). За замовчуванням його висота визначається контентом, ширина - типом елемента (блоковий або рядковий).</li>
+          <li class="delta"><strong>Внутрішнє поле (padding)</strong> — відстань до 'border', використовується для декоративних ефектів. Не можна встановлювати від'ємні значення.</li>
+          <li class="delta"><strong>Рамка (border)</strong> — межа елемента. За замовчуванням - ширина = '0'; колір = кольору контенту (тексту).</li>
+          <li class="delta"><strong>Зовнішній відступ (margin)</strong> — відступ від 'border' до сусідніх елементів. Може приймати від'ємні значення. Фон елемента не поширюється на 'margin'.</li>
+        </ul>
+   
         <div class="container">
           <!-- === CODEPEN-1 === -->
           <a class="codepen" href="https://codepen.io/Roman80-IT/pen/ZEqWJvp"
@@ -117,45 +122,97 @@
         </ul>
 
         <!-- === CODEPEN-2 === -->
-        <a class="codepen" href="https://codepen.io/Roman80-IT/pen/ZEqpLNP"
-          >Codepen</a
-        >
-        <p
-          class="codepen"
-          data-height="464"
-          data-default-tab="html,result"
-          data-slug-hash="ZEqpLNP"
-          data-user="Roman80-IT"
-          style="
-            height: 464px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid;
-            margin: 1em 0;
-            padding: 1em;
-          "
-        >
-          <span
-            >See the Pen
-            <a href="https://codepen.io/Roman80-IT/pen/ZEqpLNP">
-              wb05 - width &amp; height</a
-            >
-            by Roman80-IT (<a href="https://codepen.io/Roman80-IT"
-              >@Roman80-IT</a
-            >) on <a href="https://codepen.io">CodePen</a>.</span
+        <div class="container">
+          <a class="codepen" href="https://codepen.io/Roman80-IT/pen/ZEqpLNP"
+            >Codepen</a
           >
-        </p>
-        <script
-          async
-          src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-        ></script>
+          <p
+            class="codepen"
+            data-height="464"
+            data-default-tab="html,result"
+            data-slug-hash="ZEqpLNP"
+            data-user="Roman80-IT"
+            style="
+              height: 464px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/Roman80-IT/pen/ZEqpLNP">
+                wb05 - width &amp; height</a
+              >
+              by Roman80-IT (<a href="https://codepen.io/Roman80-IT"
+                >@Roman80-IT</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+        </div>
+        <div class="alert">
+          <p>УВАГА !</p>
+          <p>
+            Фінальна ширина і висота блоку <code>div.box</code> буде 220px, а не
+            150px. Існує декілька типів блокової моделі, які відрізняються
+            формулою розрахунку розміру елемента.
+          </p>
+        </div>
       </section>
 
       <section>
-        <h3><code>box-sizing</code>property <br />Властивість box-sizing</h3>
+        <h3>
+          <code>box-sizing</code>property <br />Властивість
+          <code>box-sizing</code>
+        </h3>
+        <p>
+          Встановлює тип блокової моделі елемента — формулу розрахунку його
+          розмірів.
+        </p>
 
+        <div class="codeBlock">
+          <code class="codeBlockLines"
+            ><span>
+              <span>box-sizing: content-box </span><span>|</spanstyle=
+              ><span> border-box </span><span>|</span
+              ><span> inherit</span><br /></span
+          ></code>
+        </div>
+<ul>
+  <li class="delta"> <code>content-box</code> — властивості width і height задають області вмісту, не включають розміри полів (padding), меж (border) і відступів (margin).</li>
+  <li class="delta"> <code>border-box</code> — фінальний розмір елемента, включають значення полів (padding) і меж (border), але не відступів (margin).</li>
+  <li class="delta"> <code>inherit</code> — наслідує значення блокової моделі предка.</li>
+</ul>
+
+
+
+
+        <!-- <div class="codeBlock">
+          <code class="codeBlockLines"
+            ><span class="token-line" style="color: rgb(248, 248, 242)"
+              ><span class="token plain">box-sizing: content-box </span
+              ><span class="token operator" style="">|</span
+              ><span class="token plain"> border-box </span
+              ><span class="token operator" style="">|</span
+              ><span class="token plain"> inherit</span><br /></span
+          ></code>
+        </div> -->
+
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
         <h3>Геометрія елемента</h3>
         <h4>Властивість "padding"</h4>
 
